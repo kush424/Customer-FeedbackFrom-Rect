@@ -1,0 +1,141 @@
+.App {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+  width: 100%;
+  margin-bottom: 15px; 
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; 
+  transition: all 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.input-error {
+  border-color: red;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+button {
+  padding: 10px 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 10px; 
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.dynamic-list {
+  margin-bottom: 20px;
+}
+
+.dynamic-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.dynamic-item input {
+  flex: 1;
+}
+
+.dynamic-item button {
+  flex-shrink: 0;
+  padding: 6px 12px;
+}
+
+.feedback-card {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.feedback-card h3 {
+  margin: 0 0 5px 0;
+  color: #333;
+}
+
+.feedback-card p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.feedback-card img {
+  margin-top: 10px;
+  border-radius: 6px;
+  max-width: 100%;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+.badge.bug { background-color: #dc3545; }
+.badge.suggestion { background-color: #17a2b8; }
+.badge.complaint { background-color: #ffc107; color: black; }
+.badge.other { background-color: #6c757d; }
+
+
+@media (max-width: 600px) {
+  .dynamic-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dynamic-item button {
+    width: 100%;
+  }
+}
+
+.badge.bug { background-color: #dc3545; }          
+.badge.suggestion { background-color: #17a2b8; } 
+.badge.complaint { background-color: #ffc107; color:black; } 
+.badge.other { background-color: #6c757d; }       
+
+
+.badge.low { background-color: #28a745; }       
+.badge.medium { background-color: #ffc107; color:black; } 
+.badge.high { background-color: #dc3545; }       
